@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.logo-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #3498db;
+    animation: pulse 2s ease infinite;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.discord-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0e3ce3;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.discord-button:hover {
+    background-color: #19238c;
+}
+
+.discord-logo {
+    max-width: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.position {
+    background-color: #292929;
+    border: 3px solid #000;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.7);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.position:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(52, 152, 219, 1);
+}
+
+.position-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #fff;
+}
+
+img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+
+p {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.info {
+    background-color: #292929;
+    border: 3px solid #000;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.7);
+}
+
+.info h2 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.info p {
+    color: #ccc;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 15px 5px rgba(52, 152, 219, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 50px 20px rgba(52, 152, 219, 0.9);
+    }
+    100% {
+        box-shadow: 0 0 15px 5px rgba(52, 152, 219, 0.7);
+    }
+}
+
+/* Tvar scrollbaru */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333; /* Barva pozadí scrollbaru */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3498db; /* Barva scrollbaru */
+    border-radius: 6px;
+}
+
+/* Pokud chcete upravit i vertikální scrollbar */
+::-webkit-scrollbar-thumb:vertical {
+    background: #3498db;
+}
+
+/* Pokud chcete upravit i horizontální scrollbar */
+::-webkit-scrollbar-thumb:horizontal {
+    background: #3498db;
+}
+

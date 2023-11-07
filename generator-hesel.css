@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #222;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 2em;
+    color: #007BFF;
+    animation: bounceIn 1s;
+}
+
+.form {
+    text-align: center;
+    animation: slideIn 1s;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+form-group label {
+    color: #007BFF;
+    animation: slideIn 1s;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 10px;
+    border: 1px solid #007BFF;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    animation: fadeIn 1s;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+    margin-top: 20px;
+    animation: bounceIn 1s;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0054b9;
+    transform: scale(1.05);
+}
+
+button.copied {
+    background-color: #4CAF50;
+    animation: fadeIn 1s, colorChange 1s;
+}
+
+.password-strength {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+strong.weak {
+    color: #FF5733;
+}
+
+strong.moderate {
+    color: #FFA533;
+}
+
+strong.strong {
+    color: #33FF63;
+}
+
+.password-strength {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #007BFF;
+}
+
+.very-weak {
+    color: #FF5733;
+}
+
+.weak {
+    color: #FFA533;
+}
+
+.strong {
+    color: #33FF63;
+}
+
+.very-strong {
+    color: #33FFCC;
+}
