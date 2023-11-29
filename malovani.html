@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JakuB - Malování</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="malovani.css"></head>
+<body>
+  <div class="container">
+    <div class="tools-panel">
+      <h1>JakuB&COPY;</h1>
+      <h2>Malování</h2>
+      <button id="brush-tool" class="tool-btn" onclick="setBrushTool()"><span class="icon">🖌️</span>Štětec</button>
+      <button id="rectangle-tool" class="tool-btn" onclick="setRectangleTool()"><span class="icon">▭</span>Obdélník</button>
+      <button id="circle-tool" class="tool-btn" onclick="setCircleTool()"><span class="icon">◯</span>Kruh</button>
+      <button id="triangle-tool" class="tool-btn" onclick="setTriangleTool()"><span class="icon">△</span>Trojúhelník</button>
+      <button id="eraser-tool" class="tool-btn" onclick="setEraser()"><span class="icon">✂️</span>Guma</button>
+      <button id="clear-btn" class="tool-btn" onclick="clearCanvas()"><span class="icon">🗑️</span>Smazat</button>
+      <label for="brush-size">Tloušťka štětce:</label>
+      <input type="range" id="brush-size" min="1" max="20" value="5" onchange="setBrushSize(event.target.value)">
+      <button class="download-btn" onclick="downloadCanvas()"><span class="icon">⬇️</span>Stáhnout obrázek</button>
+      <button class="home-button" onclick="goHome()">Domů</button>
+    </div>
+    <div class="canvas-container">
+      <canvas id="canvas" width="800" height="600"></canvas>
+    </div>
+    <div class="color-picker">
+      <label>Vyber barvu:</label>
+      <input type="color" class="color-input" id="color-picker" onchange="setColor(event.target.value)">
+      <div class="color-palette">
+        <div class="color-box" style="background-color: black;" onclick="setColor('black')"></div>
+        <div class="color-box" style="background-color: red;" onclick="setColor('red')"></div>
+        <div class="color-box" style="background-color: green;" onclick="setColor('green')"></div>
+        <div class="color-box" style="background-color: blue;" onclick="setColor('blue')"></div>
+        <div class="color-box" style="background-color: yellow;" onclick="setColor('yellow')"></div>
+        <div class="color-box" style="background-color: orange;" onclick="setColor('orange')"></div>
+        <div class="color-box" style="background-color: purple;" onclick="setColor('purple')"></div>
+        <div class="color-box" style="background-color: pink;" onclick="setColor('pink')"></div>
+        <div class="color-box" style="background-color: brown;" onclick="setColor('brown')"></div>
+        <div class="color-box" style="background-color: cyan;" onclick="setColor('cyan')"></div>
+        <div class="color-box" style="background-color: magenta;" onclick="setColor('magenta')"></div>
+        <div class="color-box" style="background-color: lime;" onclick="setColor('lime')"></div>
+        <div class="color-box" style="background-color: teal;" onclick="setColor('teal')"></div>
+        <div class="color-box" style="background-color: indigo;" onclick="setColor('indigo')"></div>
+        <div class="color-box" style="background-color: silver;" onclick="setColor('silver')"></div>
+        <div class="color-box" style="background-color: #e74c3c;" onclick="setColor('#e74c3c')"></div>
+        <div class="color-box" style="background-color: #3498db;" onclick="setColor('#3498db')"></div>
+        <div class="color-box" style="background-color: #2ecc71;" onclick="setColor('#2ecc71')"></div>
+        <div class="color-box" style="background-color: #9b59b6;" onclick="setColor('#9b59b6')"></div>
+        <div class="color-box" style="background-color: #f39c12;" onclick="setColor('#f39c12')"></div>
+      </div>
+    </div>
+  </div>
+  <script src="malovani.js"></script>
+</body>
+</html>

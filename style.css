@@ -1,7 +1,5 @@
-/* Obecné styly */
-/* Nastavení pozadí stránky */
 .luxury-dark-theme {
-    background-image: url('watercolor-795161.jpg'); /* URL obrázku na pozadí */
+    background-image: url('watercolor-795161.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -50,16 +48,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Stín pro text na pozadí */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
 }
 
-/* Nastavení fontu pro nadpis "Richard" */
 .luxury-dark-title {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
-    font-family: 'Playfair Display', serif; /* Použití Google Fontu */
-    text-transform: uppercase; /* Text ve velkých písmenech */
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
 }
 
 .luxury-dark-description {
@@ -86,13 +83,13 @@
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.2s;
-    text-transform: uppercase; /* Text ve velkých písmenech */
+    text-transform: uppercase;
 }
 
 .luxury-dark-btn:hover {
-    background-color: #ff6347; /* Změna barvy při najetí myší */
-    transform: scale(1.05); /* Zvětšení tlačítka při najetí myší */
-    box-shadow: 0 0 10px rgba(255, 69, 0, 0.5); /* Stín tlačítka při najetí myší */
+    background-color: #ff6347;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
 }
 
 .luxury-dark-projects {
@@ -116,7 +113,7 @@
 }
 
 .luxury-dark-projekt-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Zvýraznění karty při najetí myší */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .luxury-dark-card-title {
@@ -145,7 +142,7 @@
     color: #ff4500;
 }
 
-/* Footer */
+
 .luxury-dark-footer {
     background-color: #1a1a1a;
     color: #ffffff;
@@ -194,23 +191,23 @@
 }
 
 .luxury-dark-footer-links a:hover {
-    color: #ff4500; /* Změna barvy při najetí myší */
+    color: #ff4500;
 }
 
-/* Vlastní scrollbar */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ff4500; /* Barva thumb (posuvník) scrollbaru */
+    background: #ff4500;
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #ff6347; /* Barva thumb při najetí myší */
+    background: #ff6347;
 }
 
 ::-webkit-scrollbar-track {
-    background: #333333; /* Barva track (pásek) scrollbaru */
+    background: #333333;
 }
