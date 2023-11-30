@@ -45,6 +45,8 @@ form-group label {
 }
 
 input[type="number"] {
+    width: 80%; /* Změna šířky pro lepší mobilní zobrazení */
+    max-width: 200px;
     width: 50px;
     padding: 10px;
     border: 1px solid #007BFF;
@@ -116,16 +118,10 @@ strong.strong {
     color: #33FFCC;
 }
 
-/* Media Query for tablets and larger devices */
-@media (min-width: 768px) {
-    .container {
-        max-width: 600px;
-    }
-}
-
-/* Media Query for desktops and larger devices */
-@media (min-width: 992px) {
-    .container {
-        max-width: 800px;
+/* Nový styl pro mobilní zobrazení */
+@media only screen and (max-width: 600px) {
+    input[type="number"] {
+        width: 100%;
+        max-width: none;
     }
 }
