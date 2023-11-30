@@ -39,7 +39,7 @@ h1 {
     margin: 10px 0;
 }
 
-form-group label {
+label {
     color: #007BFF;
     animation: slideIn 1s;
 }
@@ -80,23 +80,6 @@ button.copied {
 .password-strength {
     font-size: 1.2em;
     margin-top: 10px;
-}
-
-strong.weak {
-    color: #FF5733;
-}
-
-strong.moderate {
-    color: #FFA533;
-}
-
-strong.strong {
-    color: #33FF63;
-}
-
-.password-strength {
-    font-size: 1.2em;
-    margin-top: 10px;
     color: #007BFF;
 }
 
@@ -114,4 +97,14 @@ strong.strong {
 
 .very-strong {
     color: #33FFCC;
+}
+
+@media (max-width: 600px) {
+    /* Úpravy pro mobilní zařízení */
+    .container {
+        max-width: 100%;
+    }
+    input[type="number"] {
+        width: 100%;
+    }
 }
