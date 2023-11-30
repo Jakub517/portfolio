@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
-    background-color: #333;
+    background-color: #111;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -13,16 +13,16 @@ body {
 }
 
 .container {
-    background-color: #444;
+    background-color: #222;
     border: 2px solid #007BFF;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    max-width: 80%;
+    max-width: 600px;
     width: 100%;
     text-align: center;
     animation: fadeIn 1s ease-in-out;
-}
+ }
 
 h1 {
     font-size: 2em;
@@ -39,14 +39,13 @@ h1 {
     margin: 10px 0;
 }
 
-label {
+form-group label {
     color: #007BFF;
     animation: slideIn 1s;
 }
 
 input[type="number"] {
-    width: 80%;
-    max-width: 200px;
+    width: 50px;
     padding: 10px;
     border: 1px solid #007BFF;
     background-color: #333;
@@ -81,6 +80,23 @@ button.copied {
 .password-strength {
     font-size: 1.2em;
     margin-top: 10px;
+}
+
+strong.weak {
+    color: #FF5733;
+}
+
+strong.moderate {
+    color: #FFA533;
+}
+
+strong.strong {
+    color: #33FF63;
+}
+
+.password-strength {
+    font-size: 1.2em;
+    margin-top: 10px;
     color: #007BFF;
 }
 
@@ -98,20 +114,4 @@ button.copied {
 
 .very-strong {
     color: #33FFCC;
-}
-
-/* Nový styl pro mobilní zobrazení */
-@media only screen and (max-width: 600px) {
-    input[type="number"] {
-        width: 100%;
-        max-width: none;
-    }
-
-    h1 {
-        font-size: 1.5em; /* Přizpůsobení velikosti nadpisu pro mobilní zařízení */
-    }
-
-    button {
-        font-size: 1em; /* Přizpůsobení velikosti tlačítka pro mobilní zařízení */
-    }
 }
