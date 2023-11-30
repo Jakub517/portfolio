@@ -39,7 +39,7 @@ h1 {
     margin: 10px 0;
 }
 
-label {
+form-group label {
     color: #007BFF;
     animation: slideIn 1s;
 }
@@ -80,6 +80,23 @@ button.copied {
 .password-strength {
     font-size: 1.2em;
     margin-top: 10px;
+}
+
+strong.weak {
+    color: #FF5733;
+}
+
+strong.moderate {
+    color: #FFA533;
+}
+
+strong.strong {
+    color: #33FF63;
+}
+
+.password-strength {
+    font-size: 1.2em;
+    margin-top: 10px;
     color: #007BFF;
 }
 
@@ -99,12 +116,16 @@ button.copied {
     color: #33FFCC;
 }
 
-@media (max-width: 600px) {
-    /* Úpravy pro mobilní zařízení */
+/* Media Query for tablets and larger devices */
+@media (min-width: 768px) {
     .container {
-        max-width: 100%;
+        max-width: 600px;
     }
-    input[type="number"] {
-        width: 100%;
+}
+
+/* Media Query for desktops and larger devices */
+@media (min-width: 992px) {
+    .container {
+        max-width: 800px;
     }
 }
