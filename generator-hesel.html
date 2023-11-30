@@ -4,92 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generátor hesel</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #1a1a1a;
-            color: #fff;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #333;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        h1 {
-            text-align: center;
-            color: #ffcc00;
-        }
-
-        .form-group {
-            margin-bottom: 15px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        input {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-            background-color: #444;
-            border: 1px solid #666;
-            color: #fff;
-        }
-
-        button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: #ffcc00;
-            color: #333;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .result {
-            margin-top: 20px;
-        }
-
-        .password {
-            margin-bottom: 10px;
-            padding: 10px;
-            border: 1px solid #666;
-            background-color: #444;
-        }
-
-        #copy-button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: #ffcc00;
-            color: #333;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        #password-strength {
-            margin-top: 10px;
-        }
-
-        @media screen and (max-width: 600px) {
-            input, button {
-                width: calc(100% - 20px);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="generator-hesel.css">
 </head>
 <body>
     <div class="container">
@@ -99,17 +14,23 @@
                 <label for="password-length">Délka hesla:</label>
                 <input type="number" id="password-length" min="1" max="40" value="12">
             </div>            
-            <div class="form-group">
-                <label for="include-uppercase">Zahrnout velká písmena:</label>
-                <input type="checkbox" id="include-uppercase" checked>
+            <div class="form-group checkbox-label">
+                <label for="include-uppercase">
+                    <input type="checkbox" id="include-uppercase" checked>
+                    Zahrnout velká písmena
+                </label>
             </div>
-            <div class="form-group">
-                <label for="include-special">Zahrnout speciální znaky:</label>
-                <input type="checkbox" id="include-special" checked>
+            <div class="form-group checkbox-label">
+                <label for="include-special">
+                    <input type="checkbox" id="include-special" checked>
+                    Zahrnout speciální znaky
+                </label>
             </div>
-            <div class="form-group">
-                <label for="include-numbers">Zahrnout čísla:</label>
-                <input type="checkbox" id="include-numbers" checked>
+            <div class="form-group checkbox-label">
+                <label for="include-numbers">
+                    <input type="checkbox" id="include-numbers" checked>
+                    Zahrnout čísla
+                </label>
             </div>
             <button id="generate-button">Generovat heslo</button>
         </div>
@@ -121,5 +42,8 @@
         </div>
     </div>
     <script src="generator-hesel.js"></script>
+
+    <!--©JakuB-->
+
 </body>
 </html>

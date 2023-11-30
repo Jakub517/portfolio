@@ -1,117 +1,160 @@
 body {
-    background-color: #121212;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #10141e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .container {
-    max-width: 60%;
-    margin: 30px auto;
-    padding: 15px;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #1d2536;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    transform: translateY(-20px);
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 h1 {
-    color: #64ffda;
     text-align: center;
-}
-
-.form {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+    color: #3498db;
 }
 
 .form-group {
     margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 label {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
-    color: #ccc;
+    display: block;
+    margin-bottom: 5px;
+    color: #3498db;
 }
 
-input[type="number"] {
-    width: calc(100% - 16px);
-    padding: 10px;
-    border: 1px solid #444;
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-    border-radius: 4px;
-    margin-top: 5px;
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    margin-right: 5px;
 }
 
 input[type="checkbox"] {
-    margin-left: 8px;
+    width: 15px;
+    height: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: #2c3e50;
+    border: 1px solid #34495e;
+    color: #ffffff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+input:hover, input:focus {
+    background-color: #34495e;
+    border-color: #3498db;
 }
 
 button {
+    display: block;
     width: 100%;
-    padding: 12px;
-    background: #64ffda;
-    color: #121212;
+    padding: 10px;
+    background-color: #3498db;
+    color: #ffffff;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background: #50c9b0;
+    background-color: #2c3e50;
+    transform: scale(1.05);
 }
 
 .result {
-    margin-top: 15px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
 }
 
 .password {
+    margin-bottom: 10px;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid #333;
-    margin-bottom: 8px;
-    color: #ffffff;
+    border: 1px solid #34495e;
+    background-color: #2c3e50;
 }
 
 #copy-button {
+    display: block;
     width: 100%;
     padding: 10px;
-    background: #64ffda;
-    color: #121212;
+    background-color: #3498db;
+    color: #ffffff;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 #copy-button:hover {
-    background: #50c9b0;
+    background-color: #2c3e50;
+    transform: scale(1.05);
 }
 
-.password-strength {
-    color: #64ffda;
-    font-weight: bold;
+#password-strength {
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
 }
 
-@media only screen and (max-width: 1200px) {
-    .container {
-        max-width: 70%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .container {
-        max-width: 80%;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .container {
-        max-width: 90%;
+@media screen and (max-width: 600px) {
+    input, button {
+        width: calc(100% - 20px);
     }
 }
