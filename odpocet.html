@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odpocet do Událostí</title>
+    <link rel="stylesheet" href="odpocet.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="fadeIn">Vyberte událost:</h1>
+        <select id="event-select" class="fadeIn">
+            <option value="christmas">Vánoce</option>
+            <option value="easter">Velikonoce</option>
+            <option value="newyear">Silvestr</option>
+            <option value="independence">Den nezávislosti</option>
+            <option value="thanksgiving">Den díkuvzdání</option>
+            <option value="halloween">Halloween</option>
+            <option value="valentines">Valentýn</option>
+            <option value="laborday">Den práce</option>
+            <option value="mothersday">Den matek</option>
+            <option value="fathersday">Den otců</option>
+            <option value="euro2024">Mistrovství Evropy ve fotbale 2024</option>
+            <option value="summersolstice">Letní slunovrat</option>
+            <option value="internationalwomensday">Mezinárodní den žen</option>
+            <option value="earthday">Den Země</option>
+            <option value="worldhealthday">Světový den zdraví</option>
+            <option value="internationalyogaday">Mezinárodní den jógy</option>
+            <option value="internationalleft-handedday">Mezinárodní den leváků</option>
+            <option value="worldteachersday">Světový den učitelů</option>
+            <option value="worldkindnessday">Světový den laskavosti</option>
+            <option value="nationalpizzaday">Národní den pizzy</option>
+            <option value="worldoceansday">Světový den oceánů</option>
+            <option value="czechstatehoodday">Den české státnosti</option>
+            <option value="velvetrevolution">Sametová revoluce</option>
+            <option value="czechconstitutionday">Den Ústavy České republiky</option>
+            <option value="janhusday">Den upálení mistra Jana Husa</option>
+            <option value="czechindependenceday">Den vzniku samostatného československého státu</option>
+            <option value="olympics">Olympiáda</option>
+            <option value="masopust">Masopust</option>
+            <option value="battleofwhitehill">Bitva na Bílé hoře</option>
+            <!-- Přidej další české události podle potřeby -->
+        </select>
+        <div class="countdown">
+            <h1 class="fadeIn">Do zvolené události zbývá</h1>
+            <div class="timer fadeIn" id="countdown-timer"></div>
+        </div>
+    </div>
+    <script src="odpocet.js"></script>
+</body>
+</html>
