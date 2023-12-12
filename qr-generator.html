@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="qr-generator.css">
+    <title>QR Code Generátor (BETA)</title>
+</head>
+<body>
+    <div id="app">
+        <label for="text-input">Zadejte text:</label>
+        <input type="text" id="text-input" placeholder="Zadejte zprávu...">
+        <button onclick="generateQRCode()">Generovat QR Code</button>
+        <div id="qrcode-container">
+            <div id="qrcode"></div>
+            <button id="download-btn" onclick="downloadQRCode()" style="display: none;">Stáhnout QR Code</button>
+        </div>
+    </div>
+    <script src="qrcode.min.js"></script>
+    <script src="qr-generator.js"></script>
+</body>
+</html>
