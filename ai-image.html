@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generátor Obrázků</title>
+    <link rel="stylesheet" href="tobytezajimaloco.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Generátor AI Obrázků</h1>
+            <p>Let your creativity flow!</p>
+            <div style="color: grey; margin-top: 10px;">&copy; JakuB</div>
+        </header>
+        <main>
+            <div class="input-container">
+                <input type="text" id="user-prompt" placeholder="Zadejte příkaz (Anglicky)">
+                <button id="generate">Generovat</button>
+            </div>
+            <button id="info">Info</button>
+            <div id="loading">Generuji obrázky...</div>
+            <div id="image-grid"></div>
+        </main>
+    </div>
+    <script src="tobytezajimaloco.js"></script>
+</body>
+</html>
