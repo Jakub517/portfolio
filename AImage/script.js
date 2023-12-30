@@ -1,4 +1,4 @@
-const apiKey = "tudy cesta hochu nepovede...";
+const apiKey = "";
 
 const maxImages = 4;
 let selectedImageNumber = null;
