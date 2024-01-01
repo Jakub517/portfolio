@@ -1,147 +1,50 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-    <script src="script.js"></script>
-    <title>JakuB - Portfolio</title>
+    <title>Jiná doména</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .message-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #005580;
+        }
+    </style>
 </head>
-<body class="luxury-dark-theme">
-    <nav class="luxury-dark-nav">
-        <div class="luxury-logo">JakuB</div>
-        <ul class="luxury-dark-nav-links">
-            <li><a href="#domov">Domov</a></li>
-            <br>
-            <li><a href="#projekty">Projekty</a></li>
-        </ul>
-    </nav>
-    
-    <header class="luxury-dark-header">
-        <div class="luxury-header-content">
-            <div class="luxury-heading-box">
-                <h1 class="luxury-dark-title"><span>Jaku</span>B</h1>
-                <div class="luxury-avatar">
-                    <img src="avatar.jpg" alt="Avatar">
-                </div>
-            <p class="luxury-dark-description">Většinou nemám tušení, co dělám, ale věřím že to bude fungovat🚀</p>
-            <a href="#projekty" class="scroll-link">Projekty</a>
-        </div>
-    </header>
-
-    <section id="projekty" class="luxury-dark-projects">
-        <div class= "luxury-dark-projekt-card">
-            <h2 class="luxury-dark-card-title">Matematika - ScoreBoard! 🗞️nové🗞️</h2>
-            <p class="luxury-dark-card-description">Počítání příkladů s tabulkou nejlepších</p>
-            <ul class="luxury-dark-features">
-                <li><i class="ri-checkbox-circle-line"></i> Jednoduché</li>
-                <li><i class="ri-checkbox-circle-line"></i> Tabulka nejlepších hráčů</li>
-                <li><i class="ri-checkbox-circle-line"></i> Design</li>
-            </ul>
-            <a class="luxury-dark-btn" href="./matematika/index.html">Otevřít</a>
-        </div>
-        <div class= "luxury-dark-projekt-card">
-            <h2 class="luxury-dark-card-title">AI - Image 🖼️</h2>
-            <p class="luxury-dark-card-description">Generuje AI obrázky!</p>
-            <ul class="luxury-dark-features">
-                <li><i class="ri-checkbox-circle-line"></i> Jednoduché</li>
-                <li><i class="ri-checkbox-circle-line"></i> Smart řešení</li>
-                <li><i class="ri-checkbox-circle-line"></i> šetří čas</li>
-            </ul>
-            <a class="luxury-dark-btn" href="./AImage/index.html">Otevřít</a>
-        </div>
-        <div class="luxury-dark-projekt-card">
-            <h2 class="luxury-dark-card-title">Generátor Hesel 🔐</h2>
-            <p class="luxury-dark-card-description">OpenSource, bezpečný generátor hesel</p>
-            <ul class="luxury-dark-features">
-                <li><i class="ri-checkbox-circle-line"></i> Bezpečné</li>
-                <li><i class="ri-checkbox-circle-line"></i> Jednoduchost</li>
-                <li><i class="ri-checkbox-circle-line"></i> OpenSource</li>
-            </ul>
-            <a class="luxury-dark-btn" href="./generator-hesel/index.html">Otevřít</a>
-        </div>
-        <div class= "luxury-dark-projekt-card">
-            <h2 class="luxury-dark-card-title">Kámen, nůžky, papír 🪨</h2>
-            <p class="luxury-dark-card-description">Hra pro jednoho hráče, když se nudíte.</p>
-            <ul class="luxury-dark-features">
-                <li><i class="ri-checkbox-circle-line"></i> Jednoduché</li>
-                <li><i class="ri-checkbox-circle-line"></i> Design</li>
-                <li><i class="ri-checkbox-circle-line"></i> OpenSource</li>
-            </ul>
-            <a class="luxury-dark-btn" href="./kamen-nuzky-papir/index.html">Otevřít</a>
-        </div>
-        <div class= "luxury-dark-projekt-card">
-            <h2 class="luxury-dark-card-title">Wordtexify 🗒️</h2>
-            <p class="luxury-dark-card-description">Pokročilý poznámkový blog</p>
-            <ul class="luxury-dark-features">
-                <li><i class="ri-checkbox-circle-line"></i> Jednoduché</li>
-                <li><i class="ri-checkbox-circle-line"></i> podpora .txt</li>
-                <li><i class="ri-checkbox-circle-line"></i> Design</li>
-            </ul>
-            <a class="luxury-dark-btn" href="./Wordexify/index.html">Otevřít</a>
-        </div>
-        <div class= "luxury-dark-projekt-card">
-            <h2 class="luxury-dark-card-title">malování 🎨</h2>
-            <p class="luxury-dark-card-description">Neslouží pro malování detailních věcí</p>
-            <ul class="luxury-dark-features">
-                <li><i class="ri-checkbox-circle-line"></i> Jednoduché</li>
-                <li><i class="ri-checkbox-circle-line"></i> Pouze pro PC!</li>
-                <li><i class="ri-checkbox-circle-line"></i> Design</li>
-            </ul>
-            <a class="luxury-dark-btn" href="./malovani/index.html">Otevřít</a>
-        </div>
-        <div class= "luxury-dark-projekt-card">
-            <h2 class="luxury-dark-card-title">Významné události 🗓️</h2>
-            <p class="luxury-dark-card-description">Velký výběr událostí</p>
-            <ul class="luxury-dark-features">
-                <li><i class="ri-checkbox-circle-line"></i> Jednoduché</li>
-                <li><i class="ri-checkbox-circle-line"></i> Velký výběr</li>
-                <li><i class="ri-checkbox-circle-line"></i> Design</li>
-            </ul>
-            <a class="luxury-dark-btn" href="./odpocet/index.html">Otevřít</a>
-        </div>
-        <div class= "luxury-dark-projekt-card">
-            <h2 class="luxury-dark-card-title">QR Code Genrátor (BETA) 🔧</h2>
-            <p class="luxury-dark-card-description">Jednoduchý Generátor Qr Code</p>
-            <ul class="luxury-dark-features">
-                <li><i class="ri-checkbox-circle-line"></i> Jednoduché</li>
-                <li><i class="ri-checkbox-circle-line"></i> Nepodporuje Češtinu</li>
-                <li><i class="ri-checkbox-circle-line"></i> Design</li>
-            </ul>
-            <a class="luxury-dark-btn" href="./qr-generator/index.html">Otevřít</a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 JakuB. Všechna práva vyhrazena.</p>
-    
-        <div class="social-links">
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-            <img src="https://cdn.iconscout.com/icon/free/png-256/free-facebook-263-721950.png" alt="Facebook">
-            Facebook
-          </a>
-          <a href="https://discord.gg/2XwuMpSvdy" target="_blank" rel="noopener noreferrer">
-            <img src="discord-icon.svg" alt="Discord">
-            Discord
-          </a>
-          <a href="https://www.instagram.com/_pavlu_jakub_/" target="_blank" rel="noopener noreferrer">
-            <img src="https://3dbay.io/files/preview/960x960/11656915876obcilw2qisbq56dz2gz95kikysrijenm5ij1lnavocinus6h3ftp6khj47k28oc6jxqifnop4bqv1hpsohlpoqr0bxzroetbbonw.png" alt="Instagram">
-            Instagram
-          </a>
-          <a href="https://www.threads.net/@_pavlu_jakub_" target="_blank" rel="noopener noreferrer">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Threads_%28app%29.png/600px-Threads_%28app%29.png" alt="Threads">
-            Threads
-          </a>
-        </div>
-    
-        <div class="collaboration-info">
-          <p>Spolupráce: Swordiik</a></p>
-        </div>
-      </footer>
-    <!--©JakuB-->
+<body>
+    <div class="message-box">
+        <h1>Tato stránka byla zrušena</h1>
+        <p>Byla vytvořena nová a lepší stránka.</p>
+        <a href="http://www.pavluu.cz">Nová stránka</a>
+    </div>
 </body>
 </html>
